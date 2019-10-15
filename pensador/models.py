@@ -6,6 +6,6 @@ class QuoteList(object):
 
 class Quote(object):
     def __init__(self, quote, author, image=None):
-        self.quote = quote
-        self.author = author
+        self.quote = quote.strip()
+        self.author = author.strip()
         self.image = image

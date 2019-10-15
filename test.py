@@ -20,7 +20,18 @@ def convert_to_dict(obj):
 
 query = pensador.Pensador()
 
-response = query.quote('amor')
+rep1 = query.quote('amor')
 
-with open('test.json', 'w') as f:
-    json.dump(response, f, default=convert_to_dict)
+with open('quote_query.json', 'w') as f:
+    json.dump(rep1, f, default=convert_to_dict)
+
+
+rep2 = query.author('João Guimarães Rosa')
+
+with open('author_query.json', 'w') as f:
+    json.dump(rep2, f, default=convert_to_dict)
+
+rep3 = query.quote('eureka')
+
+with open('quote2_query.json', 'w') as f:
+    json.dump(rep3, f, default=convert_to_dict)
