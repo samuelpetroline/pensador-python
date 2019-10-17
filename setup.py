@@ -7,7 +7,8 @@ setup(
     license='LICENSE.txt',
     packages=[
         'beautifulsoup4>=4.8.1',
-        'requests>=2.22.0'
+        'requests>=2.22.0',
+        'unidecode>=1.1.1'
     ],
     author='Samuel Petroline',
     author_email='samuelpetroline@gmail.com',
